@@ -21,7 +21,7 @@
 #' @param inputParameter5 fn3 is a file name for the clust_sim2 results
 #'   \code{inputParameter5}
 #' @param inputParameter6 matrix3 is the results from the clust_sim2 script
- code{inputParameter6}
+#' code{inputParameter6}
 #'
 #' @return output a final list of NTUs in each cluster after considering all kernels
 #'

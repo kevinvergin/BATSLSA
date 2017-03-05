@@ -27,9 +27,9 @@
 #' @examples
 #' Run diagnostic with this command:  s_matrixacf2(matrix=, boolean=,fn=)
 
-deep_popcounts_trans <- read.csv("BATS_200m_timeseries_cellcounts_transposed.csv")
 
-# use matrix=deep_popcounts_trans, boolean=lmconfirmdeep_2 in next function
+
+
 
 s_matrixacf2 <- function(matrix, boolean,fn) {
   s_mat <- matrix(NA,nrow=nrow(boolean),ncol=ncol(boolean))
@@ -52,18 +52,18 @@ s_matrixacf2 <- function(matrix, boolean,fn) {
 }
 
 
-#non-automated script
-mat1 <- read.csv(fn)
-mat1 <- mat1 [,-1] #if R adds a column of indexes
-table(as.matrix(mat1))
-mat1 [is.na(mat1)] <- 0 #replace NA’s with 0
-rs <- rowSums(mat1)
-cs <- colSums(mat1)
-total1 <- rs + cs
-total1 <- as.matrix(total1)
-total2 <- sum(total1>0)
-total3 <- total2*0.05 #can use other cutoffs, determine by graphing
-sum(total1>X)  #find X by trial and error such that the sum is = total3. Fill in X in next script.
+#non-automated script (commented out to facilitate loading)
+# mat1 <- read.csv(fn)
+# mat1 <- mat1 [,-1] #if R adds a column of indexes
+# table(as.matrix(mat1))
+# mat1 [is.na(mat1)] <- 0 #replace NA’s with 0
+# rs <- rowSums(mat1)
+# cs <- colSums(mat1)
+# total1 <- rs + cs
+# total1 <- as.matrix(total1)
+# total2 <- sum(total1>0)
+# total3 <- total2*0.05 #can use other cutoffs, determine by graphing
+# sum(total1>X)  #find X by trial and error such that the sum is = total3. Fill in X in next script.
 #end of non-automated script
 
 mat2<- function(matrix, boolean,fn2,X) {

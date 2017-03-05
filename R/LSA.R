@@ -30,6 +30,6 @@ extractmatrices <- function(LCO, delayrange=c(1), fdr=TRUE) {
   return(list(adjm=finalmatrix,delay =delaymatrix, cor = cormatrix,sign = signmatrix))
 }
 
-LSAextract2 = extractmatrices(LSA_COR_obj2)
+
 
 

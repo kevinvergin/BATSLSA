@@ -23,8 +23,8 @@
 #' @examples
 #' Run script with this command:  sim_metric_csv(boolean,distmat,namesvec, fname)
 
-n <- length(otunames)
-n_comb <- 2*n
+# n <- length(otunames)
+# n_comb <- 2*n
 
 distadj <- function(distmat , namesvec)
 {
@@ -44,7 +44,7 @@ distadj <- function(distmat , namesvec)
   return(ymat)
 }
 
-ymatrix <- distadj()
+ # ymatrix <- distadj()
 
 #need a second version for combined
 #this was written for comparing two datasets but is obsolete
@@ -79,7 +79,7 @@ distadj_comb <- function(xdata = x_comb, n = 2*length(otunames))
   return(ymat)
 }
 
-ymatrix_comb <- distadj_comb()
+# ymatrix_comb <- distadj_comb()
 
 #groups were not used in the final analysis so this variable can be ignored in most cases
 
